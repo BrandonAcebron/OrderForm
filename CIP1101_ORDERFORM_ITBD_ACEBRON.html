@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Order Form</title>
+	<link rel="stylesheet" type="text/css" href="OrderForm.css">
+</head>
+<body>
+	<div align="center">
+  <h1>Pizza Order Form</h1>
+  </div>
+	<form method="post" action="">
+    <fieldset>
+			<legend>Customer Information</legend>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+			<br>
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+			<label for="phone">Phone:</label>
+			<input type="tel" id="phone" name="phone" required>
+			<br>
+			<label for="address">Delivery Address:</label>
+			<input type="loc" id="address" name="address">
+			<br>
+			<label for="delivery">Delivery or Pick up:</label>
+			<select id="delivery" name="delivery">
+				<option value="Delivery">Delivery</option>
+				<option value="Pick up">Pick up</option>
+			</select>
+			<br>
+			<label for="feedback">Directions to the Place:</label>
+			<textarea id="feedback" name="feedback"></textarea>
+		</fieldset>
+		<fieldset>
+			<legend>Burger</legend><img class="Pat" src="https://www.recipetineats.com/wp-content/uploads/2022/08/Stack-of-cheeseburgers.jpg" alt="Burger">
+			<label for="bun">Choice of bun:</label>
+			<select id="bun" name="bun">
+				<option value="White Bun">White Bun</option>
+				<option value="Wheat Bun">Wheat Bun</option>
+				<option value="Honey Oat">Honey Oat</option>
+				<option value="Sugar Free">Sugar Free</option>
+			</select>
+			<br>
+			<label for="quantity">Quantity Per Pcs:</label>
+			<input type="number" id="quantity" name="quantity" min="1">
+		</fieldset>
+		<fieldset>
+			<legend>Pasta</legend><img class="Pat" src="https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FEdit%2F09-2022-sausage-pasta%2Fsausage-pasta-4" alt="Pasta">
+			<label for="size">Type:</label>
+      <select id="bun" name="bun">
+
+		
+      <option value="Carbonara">Carbonara</option>
+				<option value="Pesto">Pesto</option>
+				<option value="Spaghetti">Spaghetti</option>
+			</select>
+			<br>
+			<label for="quantity-per-box">Quantity per box:</label>
+			<input type="number" id="quantity-per-box" name="quantity-per-box" min="1" >
+		</fieldset>
+		<fieldset>
+			<legend>Fries</legend><img class="Pat" src="https://www.thespruceeats.com/thmb/_uO-Y9p8eu4ZVFnNQZmVqjLPoBg=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/how-to-make-homemade-french-fries-2215971-hero-01-02f62a016f3e4aa4b41d0c27539885c3.jpg" alt="Fries">
+			<label for="size">Size:</label>
+			<select id="size" name="size">
+				<option value="Small">Small</option>
+				<option value="Medium">Medium</option>
+				<option value="Large">Large</option>
+			</select>
+      <select id="flavor" name="flavor">
+			<option value="bbq">BBQ</option>
+			<option value="cheese">Cheese</option>
+			<option value="sour-cream">Sour Cream</option>
+		</select>
+		</fieldset>
+		<fieldset>
+			<legend>Drinks</legend><img src="https://tandobeverage.com/wp-content/uploads/2021/01/1.jpg" alt="Drinks">
+			<label for="drink">Choice of drink:</label>
+			<select id="drink" name="drink">
+				<option value="Juice">Juice</option>
+				<option value="water">Water</option>
+				<option value="Soda">Soda</option>
+			</select>
+      <select id="size" name="size">
+				<option value="Small">Small</option>
+				<option value="Medium">Medium</option>
+				<option value="Large">Large</option>
+			</select>
+		</fieldset>
+    <fieldset>
+    <legend>Feedback</legend>
+		<label for="feedback">How can we improve the ordering form?</label>
+		<textarea id="feedback" name="feedback"></textarea>
+    <br>
+		<button type="submit">Submit Order</button>
+		<button type="reset">Clear Form</button>
+    </fieldset>  
+	</form>
+</body>
+</html>
